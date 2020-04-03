@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+ <meta charset="UTF-8">
+ <meta name= "viewport" content="width=device-width initial-scale=1.0">
+ 
+ <head>
+  <title>
+   Meet Toby.
+  </title>
+ </head>
+ <body>
+ 	 <?php
+ 	 print_r($_POST)
+ 	 ?>
+  <h3>  Contact Me!</h3>
+  <img alt="smiling face" src="today.jpg" width="75%">
+  <p style="color:red">Hey! Nice to meet you.</p>
+  <form action="processform.php" method="POST">
+   <p>
+    <label for="firstName">First Name
+    </label><br>
+    <input type="text" name="firstName" placeholder="First Name" required>
+   </p>
+   <p>
+    <label for="lastName">Last Name
+    </label><br>
+    <input type="text" name="lastname" placeholder="Last Name">
+   </p>
+   <p>
+    <label for="tel">Telephone
+    </label><br>
+    <input type="tel" name="tel" placeholder="Mobile No">
+   </p>
+   <p>
+    <label for="email">Email
+    </label><br>
+    <input type="email" name="email" placeholder="Email address" required>
+   </p>
+   <p>
+    <label for="gender">Gender
+    </label><br>
+    <input type="radio" name=gender value=female required>Female
+    <input type="radio" name="gender" value="male">Male
+    <input type="radio" name="gender" value="other">Other
+   </p>
+   <p>
+    <label for="reason">Reason</label><br>
+    <select required>
+     <option disabled selected value="">Select Reason</option>
+     <option>Consultancy</option>
+     <option>Personal</option>
+     <option>Career</option>
+     <option>Bookings</option>
+     <option>Others</option>
+    </select>
+   </p>
+   <p>
+    <input type="checkbox" name="T&C" required>Yes, I agree to the terms and conditions
+   </p>
+   <p>
+   <input type="submit" value="Say Hello!"
+   </p>
+  </form>
+  <p>
+  You can also follow on <a href="www.twitter.com">Twitter</a> for updates!
+  </p>
+  <p>
+   <label for="enquiry">For Enquiry</label><br>
+   <textarea id="enquiry" rows="6" cols="40" maxlength="200">
+   </textarea>
+   <input type="submit" value="Make">
+  </p>
+ </body>
+ <hr>
+  &#169; 2020
+</html>
